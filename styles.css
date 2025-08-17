@@ -75,3 +75,71 @@ color: #6FBF44;
 text-decoration: none; /* remove a linha embaixo */
 }
 
+@media screen and (max-width: 800px) {
+  /* HEADER: mostra só o botão, alinhado à direita */
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+    margin: 16px 16px 24px;
+  }
+  .link-header { 
+    display: none; /* Esconde Products/Company/Blog/Log in */
+  }
+  .button-header {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  /* QUEBRA O HERO EM COLUNA (cada um em sua linha) */
+  .logo-image,
+  section {
+    display: block;
+    margin-left: 0;
+  }
+
+  /* TÍTULO */
+  h1 {
+    width: auto;
+    height: auto;
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: .2px;
+    text-align: center;
+    margin: 32px 16px 12px;
+  }
+
+  /* PARÁGRAFO */
+  p {
+    width: auto;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .2px;
+    color: #4B505A;
+    text-align: center;
+    margin: 0 16px 20px;
+  }
+
+  /* LINK/BOTÃO “Learn more” (estilizado como texto verde no mock) */
+  .button-main {
+    display: block;
+    width: max-content;
+    margin: 0 auto 24px;
+    font-size: 16px;
+    letter-spacing: .5px;
+  }
+
+  /* IMAGEM: centralizada e responsiva */
+  .logo-image {
+    display: block;
+    width: 85vw;
+    max-width: 360px;
+    height: auto;          /* remove a altura fixa do desktop */
+    margin: 16px auto 40px;/* centraliza e dá respiro inferior */
+  }
+}
