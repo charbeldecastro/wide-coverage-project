@@ -75,7 +75,7 @@ color: #6FBF44;
 text-decoration: none; /* remove a linha embaixo */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   /* HEADER: mostra só o botão, alinhado à direita */
   header {
     display: flex;
@@ -143,4 +143,5 @@ text-decoration: none; /* remove a linha embaixo */
     margin: 16px auto 40px;/* centraliza e dá respiro inferior */
   }
 }
+
   
